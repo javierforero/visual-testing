@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "visual-testing"
+  "defaultProject": "visual-testing",
+  "cli": {
+    "analytics": false
+  }
 }

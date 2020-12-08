@@ -44,6 +44,55 @@
     "directives": [],
     "components": [
         {
+            "name": "AppButtonComponent",
+            "id": "component-AppButtonComponent-832adaf9696cd2a85f2c3165ccb918de",
+            "file": "src/app/app-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button",
+            "styleUrls": [],
+            "styles": [
+                "\n      div {\n      }\n    "
+            ],
+            "template": "<button>Hello</button>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 20
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import {Component, OnInit} from '@angular/core';\n\n@Component({\n  selector: 'app-button',\n  template: `\n    <button>Hello</button>\n  `,\n  styles: [\n      `\n      div {\n      }\n    `,\n  ],\n})\nexport class AppButtonComponent implements OnInit {\n\n  constructor() {\n  }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "\n      div {\n      }\n    \n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 15
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
             "name": "AppComponent",
             "id": "component-AppComponent-5279c5a01df03571c81e4087d2696bb7",
             "file": "src/app/app.component.ts",
@@ -308,6 +357,9 @@
                     "type": "declarations",
                     "elements": [
                         {
+                            "name": "AppButtonComponent"
+                        },
+                        {
                             "name": "AppComponent"
                         }
                     ]
@@ -435,6 +487,14 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/app-button.stories.ts",
+                "type": "",
+                "defaultValue": "template.bind({})"
+            },
+            {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -464,6 +524,14 @@
                 "file": "src/stories/Button.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/app-button.stories.ts",
+                "type": "Story<AppButtonComponent>",
+                "defaultValue": "(args) => ({\n  component: AppButtonComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -624,6 +692,24 @@
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
                 }
+            ],
+            "src/stories/app-button.stories.ts": [
+                {
+                    "name": "primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/app-button.stories.ts",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/app-button.stories.ts",
+                    "type": "Story<AppButtonComponent>",
+                    "defaultValue": "(args) => ({\n  component: AppButtonComponent,\n  props: args,\n})"
+                }
             ]
         },
         "groupedFunctions": {},
@@ -645,7 +731,7 @@
         ]
     },
     "coverage": {
-        "count": 4,
+        "count": 3,
         "status": "low",
         "files": [
             {
@@ -653,6 +739,15 @@
                 "type": "class",
                 "linktype": "classe",
                 "name": "AppPage",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppButtonComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
                 "status": "low"
@@ -792,6 +887,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/app-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/app-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
